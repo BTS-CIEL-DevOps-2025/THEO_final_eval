@@ -20,6 +20,7 @@ terraform {
     storage_account_name = "btsciel2finaleval"
     container_name       = "toto"
     key                  = "terraform.tfstate"
+    Evenement            = "eval"
   }
 }
 
