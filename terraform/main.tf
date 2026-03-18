@@ -1,16 +1,16 @@
 resource "azurerm_resource_group" "example" {
-  name     = "btsciel2finaleval"
+  name     = "THEO_final_eval_rg"
   location = "France Central"
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "btsciel2finaleval"
+  name                     = "THEOfinalevalsa"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
 
   tags = {
-    environment = "staging"
+    environment = "eval"
   }
 }
