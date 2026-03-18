@@ -1,4 +1,4 @@
-name: 'Terraform'
+name: 'Execution du terraform plan THEO'
 run-name: 'Deployed by toto'
 
 on:
@@ -30,7 +30,7 @@ jobs:
         azcliversion: latest
         inlineScript: |
           az account show
-          
+
     - name: Terraform Init
       run: terraform init
     # Generates an execution plan for Terraform
