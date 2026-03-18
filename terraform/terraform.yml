@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  terraform:
-    name: 'Terraform'
+  terraform_plan:
+    name: 'etape_tf_plan'
     runs-on: ubuntu-latest
 
     steps:
